@@ -4,63 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="../css/EmployeePayroll.css" rel="stylesheet">
     <title>Employee Payroll Form</title>
-    <style>
-        body{
-            margin: 0;
-            height: 100%;
-        }
-
-        .header {
-            padding: 15px 0;
-            background-color: #ffffff;
-        }
-
-        .header-content{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            border: 0px solid green;
-        }
-
-        .logo-content {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            border: 0px solid green;
-            width: 80%;
-        }
-
-        .logo-content-img {
-            border: solid 0px #42515f;
-        }
-
-        .emp-text {
-            font: normal normal bold 20px/25px  Montserrat;
-            font-family: "Montserrat",sans-serif;
-            letter-spacing: 0px;
-            color: #82a70c;
-            text-transform: capitalize;
-        }
-
-        .emp-payroll {
-            color: #42515f;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-    </style>
 </head>
 <body>
     <header class="header-content-header">
+         <!--UC1 Creating Employee payroll with logo content-->
         <div class="logo-content">
             <img src="../assets/images/logo.png" alt="">
             <div>
                 <span class="emp-text">EMPLOYEE</span><br>
                 <span class="emp-text emp-payroll">PAYROLL</span><br>
             </div>
+        </div>
+
+        <!--UC2 Creating employee payroll form with header-->
+        <div class="form-content">
+            <form class="form" action="#"
+                  onsubmit="save();return false">
+                <div class="form-head">
+                    Employee Payroll Form
+                </div>
+                <div class="row-content">
+                    <label class="label-text"
+                            for="name">Name</label>
+
+                    <input class="input" type="text" id="name"
+                           name="name" placeholder="Your Name.."
+                           required>
+                </div>
+            </form>
         </div>
     </header>
 </body>
