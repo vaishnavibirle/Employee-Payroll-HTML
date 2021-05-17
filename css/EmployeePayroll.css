@@ -77,7 +77,7 @@ body{
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
-    align-items: center;
+    align-items: normal;
     border: 0px solid green;
 }
 
@@ -121,4 +121,22 @@ label {
     width: 40px;
     border-radius: 50%;
     margin-left: 12px;
+}
+
+<!--UC4-->
+.salary {
+    display: flex;
+
+}
+
+<!--UC5-->
+select{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font: normal normal normal 16px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    background-color: transparent;
 }
